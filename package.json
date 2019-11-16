@@ -18,6 +18,7 @@
     "jsonstore.io": "^1.1.0",
     "math.js": "^1.1.45",
     "node-opus": "^0.3.3",
+    "request": "^2.88.0",
     "util": "^0.12.1"
   },
   "engines": {

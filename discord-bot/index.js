@@ -13,7 +13,7 @@ var config = {
     developer: `DamienVesper`,
     developerTag: `#4927`,
     developerID: `386940319666667521`,
-    prefix: `!`,
+    prefix: `.`,
     token: process.env.DISCORD_BOT_TOKEN,
     jsonstoreToken: process.env.JSONSTORE_TOKEN,
     version: `0.2.1`,

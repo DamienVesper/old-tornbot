@@ -1,10 +1,19 @@
 const Discord = require(`discord.js`);
 const { config } = require(`../index.js`);
-const { getUsers } = require(`../api/getUsers.js`);
 const jsonstore = require(`jsonstore.io`);
+let store = new jsonstore(config.jsonstoreToken);
 
-module.exports.run = async(client, message, args) => {  
-    return;
+module.exports.run = async(client, message, args) => {
+  store.read(`users/${message.author.id}`).then(tornUser => {
+    store.read(`users/${message.author.id}`).then(data => {
+      if(!data) return message.channel.send(`${message.author} You are not registered!`);
+
+      store.delete(`users/${message.author.id}`);
+      store.delete(`authorizedUsers/${tornUser}`);
+
+      message.channel.send(`Edited userdata for **${message.author.username}#${message.author.discriminator}**.`);
+    });
+  });
 }
 
 module.exports.config = {

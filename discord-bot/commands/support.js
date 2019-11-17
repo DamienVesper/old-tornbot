@@ -3,7 +3,7 @@ const { config } = require(`../index.js`);
 const jsonstore = require(`jsonstore.io`);
 
 module.exports.run = async(client, message, args) => {  
-    return;
+  return message.channel.send(`${message.author} Support is currently unavailable.`);
 }
 
 module.exports.config = {

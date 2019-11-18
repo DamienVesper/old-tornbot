@@ -56,7 +56,7 @@ fs.readdir(`./discord-bot/commands/`, (err, files) => {
 /* Client Checks */
 function refreshActivity() {
     let botGame = `Torn.Space`;
-    let memberCount = 0; //client.guilds.get(`247490958374076416`).memberCount
+    let memberCount = client.users.size;
     client.user.setPresence({
         game: { 
             name: `${memberCount} users on ${botGame}.`,

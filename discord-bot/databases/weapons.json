@@ -1,0 +1,167 @@
+[{
+    "name": "Stock Gun", "range": 250, "damage": 20, "speed": 50, "charge": 8, "price": 0, "ammo": -1, "level": 0, "order": 0, "type": "Gun", "bot": true
+}
+,
+{
+    "name": "Plasma Gun", "range": 150, "damage": 45, "speed": 40, "charge": 10, "price": 2000, "ammo": 175, "level": 2, "order": 2, "type": "Gun", "bot": true
+}
+,
+{
+    "name": "Reverse Gun", "range": 250, "damage": 30, "speed": 50, "charge": 8, "price": 1000, "ammo": -1, "level": 1, "order": 1, "type": "Gun", "bot": false
+}
+,
+{
+    "name": "Rifle", "range": 750, "damage": 30, "speed": 80, "charge": 10, "price": 5000, "ammo": 40, "level": 5, "order": 4, "type": "Gun", "bot": true
+}
+,
+{
+    "name": "Shotgun", "range": 100, "damage": 20, "speed": 50, "charge": 15, "price": 5000, "ammo": 40, "level": 3, "order": 3, "type": "Gun", "bot": true
+}
+,
+{
+    "name": "Machine Gun", "range": 250, "damage": 10, "speed": 80, "charge": 4, "price": 6000, "ammo": 500, "level": 4, "order": 5, "type": "Gun", "bot": true
+}
+,
+{
+    "name": "Minigun", "range": 250, "damage": 8, "speed": 60, "charge": 4, "price": 30000, "ammo": 500, "level": 6, "order": 6, "type": "Gun", "bot": true
+}
+,
+{
+    "name": "Plasma Beam", "range": 60, "damage": 5, "speed": -1, "charge": 3, "price": 6000, "ammo": -1, "level": 1, "order": 19, "type": "Beam", "bot": true
+}
+,
+{
+    "name": "Laser Beam", "range": 60, "damage": 22, "speed": -1, "charge": 10, "price": 12000, "ammo": -1, "level": 4, "order": 20, "type": "Beam", "bot": true
+}
+,
+{
+    "name": "Hadron Beam", "range": 125, "damage": 80, "speed": -1, "charge": 50, "price": 30000, "ammo": -1, "level": 8, "order": 21, "type": "Beam", "bot": true
+}
+,
+{
+    "name": "Missile", "range": 1000, "damage": 20, "speed": 100, "charge": 12, "price": 4000, "ammo": 20, "level": 0, "order": 9, "type": "Missile", "bot": true
+}
+,
+{
+    "name": "Heavy Missile", "range": 750, "damage": 40, "speed": 60, "charge": 20, "price": 10000, "ammo": 20, "level": 3, "order": 10, "type": "Missile", "bot": true
+}
+,
+{
+    "name": "EMP Missile", "range": 750, "damage": 25, "speed": 100, "charge": 50, "price": 40000, "ammo": 10, "level": 7, "order": 12, "type": "Missile", "bot": false
+}
+,
+{
+    "name": "Missile Swarm", "range": 750, "damage": -1, "speed": 50, "charge": 100, "price": 60000, "ammo": 5, "level": 9, "order": 13, "type": "Missile", "bot": true
+}
+,
+{
+    "name": "Torpedo", "range": 3000, "damage": 12, "speed": 120, "charge": 30, "price": 18000, "ammo": 15, "level": 5, "order": 11, "type": "Missile", "bot": true
+}
+,
+{
+    "name": "Mine", "range": 16, "damage": 45, "speed": -1, "charge": 25, "price": 1000, "ammo": 15, "level": 0, "order": 26, "type": "Mine", "bot": false
+}
+,
+{
+    "name": "Laser Mine", "range": 64, "damage": 50, "speed": -1, "charge": 100, "price": 6000, "ammo": 10, "level": 3, "order": 29, "type": "Mine", "bot": false
+}
+,
+{
+    "name": "EMP Mine", "range": 24, "damage": 30, "speed": -1, "charge": 100, "price": 10000, "ammo": 4, "level": 6, "order": 30, "type": "Mine", "bot": false
+}
+,
+{
+    "name": "Hull Nanobots", "range": -1, "damage": -150, "speed": -1, "charge": 175, "price": 50000, "ammo": 3, "level": 8, "order": 34, "type": "Misc", "bot": false
+}
+,
+{
+    "name": "Photon Cloak", "range": -1, "damage": -1, "speed": -1, "charge": 600, "price": 30000, "ammo": 2, "level": 4, "order": 35, "type": "Misc", "bot": false
+}
+,
+{
+    "name": "Generator", "range": -1, "damage": -1, "speed": -1, "charge": 0, "price": 60000, "ammo": -1, "level": 9, "order": 37, "type": "Misc", "bot": false
+}
+,
+{
+    "name": "Turbo", "range": -1, "damage": -1, "speed": 1.44, "charge": 0, "price": 15000, "ammo": -1, "level": 2, "order": 31, "type": "Misc", "bot": false
+}
+,
+{
+    "name": "Hyperdrive", "range": -1, "damage": -1, "speed": 10000, "charge": 0, "price": 3500, "ammo": -2, "level": 5, "order": 32, "type": "Misc", "bot": false
+}
+,
+{
+    "name": "Pulse Wave", "range": 10000, "damage": 0, "speed": 40, "charge": 100, "price": 25000, "ammo": 1, "level": 7, "order": 36, "type": "Misc", "bot": false
+}
+,
+{
+    "name": "Electromagnet", "range": 512, "damage": 0.1666, "speed": -1, "charge": 0, "price": 40000, "ammo": -1, "level": 8, "order": 38, "type": "Misc", "bot": false
+}
+,
+{
+    "name": "EMP Blast", "range": 100000, "damage": -1, "speed": -1, "charge": 150, "price": 50000, "ammo": 2, "level": 9, "order": 24, "type": "Blast", "bot": false
+}
+,
+{
+    "name": "Mining Laser", "range": 100, "damage": 30, "speed": -1, "charge": 5, "price": 5000, "ammo": -1, "level": 1, "order": 16, "type": "Beam", "bot": false
+}
+,
+{
+    "name": "Turret", "range": 1000, "damage": 30, "speed": -1, "charge": 8, "price": 750000, "ammo": -2, "level": 10, "order": 40, "type": "Misc", "bot": false
+}
+,
+{
+    "name": "Gravity Bomb", "range": 2500, "damage": 300, "speed": 10, "charge": 0, "price": 2000000, "ammo": -2, "level": 10, "order": 41, "type": "Misc", "bot": false
+}
+,
+{
+    "name": "Warp Drive", "range": -1, "damage": -1, "speed": 500, "charge": 150, "price": 200000, "ammo": 3, "level": 7, "order": 33, "type": "Misc", "bot": false
+}
+,
+{
+    "name": "Ore Cannon", "range": 200, "damage": 60, "speed": -1, "charge": 5, "price": 20000, "ammo": -1, "level": 2, "order": 17, "type": "Beam", "bot": false
+}
+,
+{
+    "name": "Destabilizer", "range": 1000000, "damage": -1, "speed": -1, "charge": 100, "price": 4000, "ammo": 3, "level": 6, "order": 22, "type": "Beam", "bot": false
+}
+,
+{
+    "name": "Impulse Mine", "range": 16, "damage": 0, "speed": -1, "charge": 25, "price": 6000, "ammo": 10, "level": 4, "order": 27, "type": "Mine", "bot": false
+}
+,
+{
+    "name": "Grenades", "range": 16, "damage": 45, "speed": 30, "charge": 25, "price": 8000, "ammo": 10, "level": 3, "order": 28, "type": "Mine", "bot": false
+}
+,
+{
+    "name": "Muon Ray", "range": 10000, "damage": 300, "speed": -1, "charge": 200, "price": 1000000, "ammo": 1, "level": 10, "order": 23, "type": "Blast", "bot": false
+}
+,
+{
+    "name": "Jammer", "range": 16, "damage": 0, "speed": -1, "charge": 3, "price": 40000, "ammo": -1, "level": 10, "order": 18, "type": "Beam", "bot": false
+}
+,
+{
+    "name": "Supercharger", "range": -1, "damage": -1, "speed": -1, "charge": 0, "price": 100000, "ammo": -2, "level": 11, "order": 39, "type": "Misc", "bot": false
+}
+,
+{
+    "name": "Energy Disk", "range": 125, "damage": 25, "speed": 8, "charge": 25, "price": 5000, "ammo": 15, "level": 0, "order": 15, "type": "Orb", "bot": true
+}
+,
+{
+    "name": "Proximity Fuze", "range": 125, "damage": 25, "speed": 40, "charge": 25, "price": 5000, "ammo": 15, "level": 5, "order": 14, "type": "Missile", "bot": true
+}
+,
+{
+    "name": "Spreadshot", "range": 250, "damage": 8, "speed": 60, "charge": 4, "price": 30000, "ammo": 200, "level": 6, "order": 7, "type": "Gun", "bot": true
+}
+,
+{
+    "name": "Submachinegun", "range": 250, "damage": 10, "speed": 60, "charge": 10, "price": 30000, "ammo": 1000, "level": 6, "order": 8, "type": "Gun", "bot": true
+}
+,
+{
+    "name": "Hypno Ray", "range": 10000, "damage": 0, "speed": -1, "charge": 25, "price": 5000, "ammo": -2, "level": 5, "order": 25, "type": "Blast", "bot": false
+}]

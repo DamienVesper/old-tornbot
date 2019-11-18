@@ -1,5 +1,3 @@
-const { config } = require(`../index.js`);
-const jsonstore = require(`jsonstore.io`);
 const request = require(`request`);
 
 var rawTornUsers = {};
@@ -14,14 +12,12 @@ request(`https://torn.space/leaderboard/`, (err, res, body) => {
     rawTD.push(rawTR[i].split(`</td>`)); //splits row items by row into array
   }
 
-  for(let i = 0; i < rawTD.length; i++) {
-      let newRTU = rawTD.slice(`,`);
-      for(let j = 0; j < newRTU.length; j++) { //individualize row items
-        let newArrItem = newRTU[j].slice(4);
-        newRTU[j] = newArrItem; //remove opening <th>
-      }
-
-      rawTornUsers[i.toString()] = newRTU; //assign raw user to object
+  for(let i = 0; i < rawTD.length; i++) { //individualize row items
+    for(let j = 0; j < rawTD[i].length; j++) {
+      let newArrItem = rawTD[i][j].slice(4);
+      rawTD[i][j] = newArrItem; //remove opening <td>
+    }
+      rawTornUsers[i] = rawTD[i]; //assign raw user to object
   }
 
   for(let i in rawTornUsers) {
@@ -31,7 +27,7 @@ request(`https://torn.space/leaderboard/`, (err, res, body) => {
 
       //get name of user; remove account tag if there is one
       if(rawTornUsers[i][1].slice(0, 2) == `[`) newUO = rawTornUsers[i][1].slice(3);
-      else newUO = rawTornUsers[i][1];
+      else newUO = rawTornUsers[i][1].toString();
 
       tornUsers[newUO] = {};
 
@@ -42,7 +38,7 @@ request(`https://torn.space/leaderboard/`, (err, res, body) => {
       else tornUsers[newUO].team = `Undetermined`;
 
       //Assign account type
-      if(rawUO[1].slice(0, 3) == `[J]`) tornUsers[newUO].accountType = `Janitor`;
+      if(rawUO[1].slice(0, 3) == `[V]`) tornUsers[newUO].accountType = `VIP`;
       else if(rawUO[1].slice(0, 3) == `[M]`) tornUsers[newUO].accountType = `Moderator`;
       else if(rawUO[1].slice(0, 3) == `[O]`) tornUsers[newUO].accountType = `Owner`;
       else tornUsers[newUO].accountType = `Player`;
@@ -52,11 +48,10 @@ request(`https://torn.space/leaderboard/`, (err, res, body) => {
       tornUsers[newUO].xp = parseInt(rawUO[2]);
       tornUsers[newUO].rank = parseInt(rawUO[3]);
       tornUsers[newUO].kills = parseInt(rawUO[4]);
-      // tornUsers[newUO].liquidValue = parseInt(rawUO[5]);
+      tornUsers[newUO].liquidValue = rawUO[5];
       tornUsers[newUO].tech = parseInt(rawUO[6]);
   }
 
   //Return user object.
-  console.log(tornUsers);
   module.exports = { tornUsers };
 });

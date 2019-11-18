@@ -1,0 +1,83 @@
+[{
+    "thrust": 0.8, "health": 100, "agility": 1.75, "width": 64, "price": 7500, "weapons": 1, "capacity": 4000
+}
+,
+{
+    "thrust": 0.8, "health": 120, "agility": 2, "width": 64, "price": 12500, "weapons": 2, "capacity": 4800
+}
+,
+{
+    "thrust": 0.7, "health": 180, "agility": 1, "width": 64, "price": 20000, "weapons": 3, "capacity": 10000
+}
+,
+{
+    "thrust": 0.9, "health": 80, "agility": 2.2, "width": 64, "price": 25000, "weapons": 3, "capacity": 2000
+}
+,
+{
+    "thrust": 0.7, "health": 150, "agility": 2.2, "width": 64, "price": 40000, "weapons": 4, "capacity": 1800
+}
+,
+{
+    "thrust": 0.6, "health": 175, "agility": 1.5, "width": 64, "price": 50000, "weapons": 5, "capacity": 4000
+}
+,
+{
+    "thrust": 0.65, "health": 130, "agility": 0.8, "width": 64, "price": 75000, "weapons": 6, "capacity": 3000
+}
+,
+{
+    "thrust": 0.45, "health": 250, "agility": 0.7, "width": 128, "price": 100000, "weapons": 6, "capacity": 3500
+}
+,
+{
+    "thrust": 0.55, "health": 180, "agility": 0.8, "width": 128, "price": 200000, "weapons": 7, "capacity": 3000
+}
+,
+{
+    "thrust": 0.4, "health": 270, "agility": 0.7, "width": 128, "price": 250000, "weapons": 7, "capacity": 8000
+}
+,
+{
+    "thrust": 0.45, "health": 250, "agility": 0.8, "width": 128, "price": 250000, "weapons": 8, "capacity": 5000
+}
+,
+{
+    "thrust": 0.5, "health": 220, "agility": 0.7, "width": 128, "weapons": 8, "price": 400000, "capacity": 2000
+}
+,
+{
+    "thrust": 0.3, "health": 600, "agility": 0.3, "width": 192, "price": 400000, "weapons": 9, "capacity": 50000
+}
+,
+{
+    "thrust": 0.35, "health": 300, "agility": 0.3, "width": 128, "price": 500000, "weapons": 9, "capacity": 10000
+}
+,
+{
+    "thrust": 0.4, "health": 250, "agility": 0.5, "width": 128, "price": 1000000, "weapons": 9, "capacity": 2000
+}
+,
+{
+    "thrust": 0.32, "health": 500, "agility": 0.3, "width": 192, "price": 1000000, "weapons": 10, "capacity": 20000
+}
+,
+{
+    "thrust": 0.5, "health": 250, "agility": 0.4, "width": 128, "weapons": 10, "price": 2000000, "capacity": 5000
+}
+,
+{
+    "thrust": 0.22, "health": 800, "agility": 0.3, "width": 192, "price": 2500000, "weapons": 10, "capacity": 999999
+}
+,
+{
+    "thrust": 0.32, "health": 500, "agility": 0.3, "width": 128, "price": 3000000, "weapons": 10, "capacity": 10000
+}
+,
+{
+    "thrust": 0.4, "health": 300, "agility": 0.5, "width": 128, "price": 5000000, "weapons": 10, "capacity": 5000
+}
+,
+{
+    "thrust": 0.2, "health": 500, "agility": 0.3, "width": 192, "price": 900000000000, "weapons": 10, "capacity": 20000
+}]

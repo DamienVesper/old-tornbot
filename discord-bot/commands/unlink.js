@@ -1,6 +1,7 @@
 const Discord = require(`discord.js`);
 const { config } = require(`../index.js`);
 const jsonstore = require(`jsonstore.io`);
+const tornUsers = require(`../api/getUsers.js`);
 let store = new jsonstore(config.jsonstoreToken);
 
 module.exports.run = async(client, message, args) => {

@@ -14,7 +14,7 @@ var config = {
     developerTag: `#4927`,
     developerID: `386940319666667521`,
     prefix: `.`,
-    token: process.env.DISCORD_BOT_TOKEN,
+    token: process.env.DBL_SELFBOT,
     jsonstoreToken: process.env.JSONSTORE_TOKEN,
     version: `0.2.1`,
     footer: `© Torn.Space 2019 | Failed to load version.`

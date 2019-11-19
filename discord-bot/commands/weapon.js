@@ -7,18 +7,17 @@ module.exports.run = async(client, message, args) => {
 	let weaponName = args[0];
 	if(!weaponName) return message.channel.send(`${message.author} Please specify a weapon to search for!`);
 	let weaponObj = wepStats[parseInt(weaponName)];
-	if(!weaponObj || !wepInfoObj) return message.channel.send(`${message.author} That weapon does not exist!`);
+	if(!weaponObj) return message.channel.send(`${message.author} That weapon does not exist!`);
 	
 	let sEmbed = new Discord.RichEmbed()
-		.setTitle(wepInfoObj[`name`])
+		.setTitle(weaponObj.name)
 		.setColor(`#f4d35e`)
-    .setDescription(weaponObj.name)
     .addField(`\u200B`, `
 **Price**: ${weaponObj.price}
 **Damage**: ${weaponObj.damage}
-**Ammo**: ${weaponObj.ammo}
-**Energy**: ${weaponObj.energy}
-**Range**: ${weaponObj.range}
+**Ammo**: ${weaponObj.ammo}\n` + 
+// **Energy**: ${weaponObj.energy}
+`**Range**: ${weaponObj.range}
 `, true)
     .addField(`\u200B`, `
 **Speed**: ${weaponObj.speed}

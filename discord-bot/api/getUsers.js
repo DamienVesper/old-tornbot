@@ -26,8 +26,17 @@ request(`https://torn.space/leaderboard/`, (err, res, body) => {
       if(!rawUO) return console.log(`0`);
 
       //get name of user; remove account tag if there is one
-      if(rawTornUsers[i][1].slice(0, 2) == `[`) newUO = rawTornUsers[i][1].slice(3);
-      else newUO = rawTornUsers[i][1].toString();
+      var typeUO = null;
+      if(rawUO[1].slice(0, 1) == `[`) {
+        //Save account type
+        if(rawUO[1].slice(0, 3) == `[V]`) typeUO = `VIP`;
+        else if(rawUO[1].slice(0, 3) == `[M]`) typeUO = `Moderator`;
+        else if(rawUO[1].slice(0, 3) == `[O]`) typeUO = `Owner`;
+        else typeUO = `Player`;
+        
+        newUO = rawUO[1].toString().slice(4);
+      }
+      else newUO = rawUO[1].toString();
 
       tornUsers[newUO] = {};
 
@@ -38,9 +47,7 @@ request(`https://torn.space/leaderboard/`, (err, res, body) => {
       else tornUsers[newUO].team = `Undetermined`;
 
       //Assign account type
-      if(rawUO[1].slice(0, 3) == `[V]`) tornUsers[newUO].accountType = `VIP`;
-      else if(rawUO[1].slice(0, 3) == `[M]`) tornUsers[newUO].accountType = `Moderator`;
-      else if(rawUO[1].slice(0, 3) == `[O]`) tornUsers[newUO].accountType = `Owner`;
+      if(typeUO) tornUsers[newUO].accountType = typeUO;
       else tornUsers[newUO].accountType = `Player`;
 
       //Assign other stats
